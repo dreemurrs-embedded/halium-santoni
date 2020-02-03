@@ -76,8 +76,8 @@ jobs:
     - name : Upload boot image
       uses: actions/upload-artifact@master
       with:
-        name: halium-boot image
-        path: /home/runner/work/halium/out/target/product/santoni/halium-boot.img
+        name: hybris-boot image
+        path: /home/runner/work/halium/out/target/product/santoni/hybris-boot.img
 
     - name : Upload system image
       uses: actions/upload-artifact@master
