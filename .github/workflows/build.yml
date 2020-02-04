@@ -64,8 +64,8 @@ jobs:
         git clone https://gitlab.com/dreemurrs-embedded/halium/santoni/android_vendor_xiaomi_santoni.git $ANDROID_ROOT/vendor/xiaomi --depth=1
         git clone https://gitlab.com/dreemurrs-embedded/halium/santoni/android_kernel_xiaomi_santoni.git $ANDROID_ROOT/kernel/xiaomi/msm8937 --depth=1
         git clone https://android.googlesource.com/platform/external/curl.git -b android-7.1.2_r37 $ANDROID_ROOT/external/libcurl --depth=1
-        rm -rf $ANDROID_ROOT/hybris/hybris-boot
-        git clone https://github.com/sailfish-santoni/hybris-boot.git $ANDROID_ROOT/hybris/hybris-boot
+        rm -rf $ANDROID_ROOT/halium/hybris-boot
+        git clone https://github.com/sailfish-santoni/hybris-boot.git -b santoni $ANDROID_ROOT/halium/hybris-boot --depth=1
 
     - name: Build HAL
       run: |
